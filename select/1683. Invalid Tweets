@@ -1,0 +1,5 @@
+SELECT tweet_Id
+FROM Tweets as t
+WHERE Length(t.content) > 15;
+
+//Length(String) return the length of the String
