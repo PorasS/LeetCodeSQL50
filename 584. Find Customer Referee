@@ -1,7 +1,0 @@
-SELECT name
-FROM Customer as c
-WHERE c.id NOT IN (
-    SELECT id
-    FROM Customer as c
-    WHERE c.referee_id = 2
-);
