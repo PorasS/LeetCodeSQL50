@@ -1,3 +1,5 @@
+https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50
+
 SELECT tweet_Id
 FROM Tweets as t
 WHERE Length(t.content) > 15;
