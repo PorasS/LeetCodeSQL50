@@ -1,0 +1,6 @@
+https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50
+
+Select unique_id, name 
+from Employees
+Left outer join EmployeeUNI
+On Employees.id = EmployeeUNI.id
