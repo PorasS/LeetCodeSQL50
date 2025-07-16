@@ -1,0 +1,10 @@
+https://leetcode.com/problems/percentage-of-users-attended-a-contest/description/?envType=study-plan-v2&envId=top-sql-50
+
+Select contest_id, Round((Count(u.user_id) / (Select Count(*) From Users)) * 100, 2) as percentage
+From Users u, Register r
+Where u.user_id = r.user_id
+Group By contest_id
+Order By percentage DESC, contest_id;
+
+# to run ordering on multiple paramaters, use as below
+# Order By param1, param2, ...
