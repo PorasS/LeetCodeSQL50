@@ -1,0 +1,7 @@
+https://leetcode.com/problems/biggest-single-number/?envType=study-plan-v2&envId=top-sql-50
+
+Select MAX(sq.num) as num
+FROM (Select num
+From MyNumbers
+Group By num
+Having count(num) = 1) as sq
